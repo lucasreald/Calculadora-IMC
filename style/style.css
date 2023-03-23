@@ -1,0 +1,170 @@
+:root {
+  --colorOne: #6d8d76;
+  --colorTwo: #b0c65a;
+  --colorThree: #fffff0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--colorOne);
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--colorOne);
+  font-size: 30px;
+  padding: 0.7em;
+  text-align: center;
+  height: 10vh;
+}
+
+#header p {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#header img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 85vh;
+  flex-wrap: wrap;
+}
+
+#leftSide {
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--colorTwo);
+  border-radius: 1em;
+  font-size: 20px;
+  text-align: center;
+}
+
+#leftSide h2 {
+  padding: 0.5em;
+  font-weight: 400;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  padding: 0.2em;
+  font-weight: 300;
+  background-color: var(--colorThree);
+}
+
+#leftSide ::-webkit-input-placeholder {
+  opacity: 0.4;
+}
+
+#leftSide span {
+  opacity: 0.4;
+}
+
+.height {
+  font-size: 20px;
+  margin-bottom: 0.6em;
+  font-weight: 300;
+}
+
+.weight {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 0.4em;
+}
+
+#btnOne {
+  font-size: 20px;
+  margin: 0.9em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  background-color: var(--colorThree);
+  opacity: 0.8;
+  margin-bottom: 2em;
+}
+
+#btnOne:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#res {
+  background-color: var(--colorThree);
+  height: 220px;
+  border-radius: 1em;
+  padding: 0.5em;
+  font-weight: 200;
+  text-align: start;
+  max-width: 400px;
+  font-size: 18px;
+}
+
+#rightSide {
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--colorTwo);
+  border-radius: 1em;
+  font-size: 20px;
+}
+
+#rightSide h2 {
+  padding: 1em;
+  font-weight: 400;
+  padding-bottom: 2em;
+}
+
+#rightSide p {
+  padding: 0.5em;
+}
+
+.description {
+  background-color: var(--colorThree);
+  height: 400px;
+  border-radius: 1em;
+  padding: 0.5em;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 300;
+}
+
+.description span {
+  font-weight: 600;
+}
+
+#footer {
+  background-color: #748278;
+  text-align: end;
+  padding-right: 1em;
+  font-size: 18px;
+  font-weight: 200;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--colorTwo);
+  font-weight: 400;
+}
